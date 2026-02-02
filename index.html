@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre parcours vers le bien-être</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-herbal-green { background-color: #43b02a; }
+        .text-herbal-green { color: #43b02a; }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        
+        @media print {
+            @page { size: A4; margin: 1cm; }
+            body { background-color: white; padding: 0; }
+            .no-print { display: none !important; }
+            .card-shadow { box-shadow: none !important; border: none !important; }
+            .max-w-4xl { max-width: 100% !important; margin: 0 !important; }
+            main { padding: 0 !important; }
+            section { break-inside: avoid; }
+        }
+
+        .action-btn { transition: all 0.2s; }
+        .action-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print text-gray-500">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500">Tableau de bord bien-être</h2>
+        <div class="flex gap-3">
+            <a href="https://wa.me/33644654881?text=Bonjour%20Simona" target="_blank" class="action-btn flex items-center gap-2 bg-green-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.483 8.413-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.308 1.654zm6.757-4.791c1.513.899 3.111 1.373 4.76 1.373 5.33 0 9.67-4.34 9.67-9.671 0-2.585-1.006-5.016-2.834-6.844-1.828-1.828-4.258-2.834-6.843-2.834-5.333 0-9.673 4.34-9.673 9.672 0 1.761.479 3.483 1.385 5.003l-1.026 3.744 3.831-.997zm11.233-7.14c-.08-.133-.293-.213-.613-.373s-1.893-.933-2.186-1.04c-.293-.106-.506-.16-.72.16s-.826 1.04-1.013 1.253-.373.24-.693.08-1.352-.498-2.577-1.59c-.952-.849-1.594-1.9-1.781-2.213-.187-.313-.02-.483.14-.641.144-.142.32-.373.48-.56s.213-.32.32-.533c.106-.213.053-.4-.027-.56s-.72-1.733-.986-2.373c-.26-.627-.523-.541-.72-.551-.186-.009-.4-.01-.613-.01s-.56.08-.853.4c-.293.32-1.12 1.093-1.12 2.667s1.147 3.093 1.307 3.306c.16.213 2.257 3.447 5.467 4.833.763.33 1.359.526 1.823.673.766.243 1.463.209 2.013.127.613-.092 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52z"/></svg>
+                Contact Simona
+            </a>
+            <button onclick="window.print()" class="action-btn flex items-center gap-2 bg-white text-gray-700 px-6 py-2.5 rounded-full font-semibold shadow-md border border-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                Imprimer
+            </button>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden card-shadow mb-8">
+        
+        <header class="bg-herbal-green p-8 text-center text-white">
+            <h1 class="text-3xl md:text-4xl font-extrabold uppercase tracking-tight">Votre parcours vers le bien-être</h1>
+            <p class="mt-2 text-lg opacity-90 font-light italic text-white">Énergie, nutrition et vitalité pour chaque jour</p>
+        </header>
+
+        <main class="p-6 md:p-10 space-y-10">
+
+            <!-- Section 1: Petit-déjeuner -->
+            <section>
+                <div class="flex items-center gap-3 mb-6 border-b pb-4 border-gray-100">
+                    <div class="bg-herbal-green text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                    <h2 class="text-2xl font-bold text-herbal-green uppercase tracking-wide">Le petit-déjeuner équilibré</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Aloe -->
+                    <div class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-2xl bg-gray-50">
+                        <div class="h-48 flex items-center justify-center mb-4">
+                            <img src="aloe.png" alt="Aloe Drink" class="h-full object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-herbal-green uppercase text-sm tracking-wide">1. Hydratation (Aloe)</h3>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            <strong>3 BOUCHONS</strong> dans un verre d'eau.<br>
+                            <span class="text-xs italic mt-1 block">(Conserver au frais après ouverture)</span>
+                        </p>
+                    </div>
+
+                    <!-- Infuso -->
+                    <div class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-2xl bg-gray-50">
+                        <div class="h-48 flex items-center justify-center mb-4">
+                            <img src="Infuso.png" alt="Infuso" class="h-full object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-herbal-green uppercase text-sm tracking-wide">2. Énergie (Infusion)</h3>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            <strong>½ CUILLÈRE À CAFÉ</strong> dans une tasse d'eau chaude ou dans une bouteille de 1,5 litre.
+                        </p>
+                    </div>
+
+                    <!-- F1 + PDM -->
+                    <div class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-2xl bg-gray-50">
+                        <div class="h-48 flex items-center justify-center mb-4 gap-2">
+                            <img src="Formula 1.png" alt="Formula 1" class="h-full object-contain">
+                            <img src="pdm.png" alt="PDM" class="h-full object-contain">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-herbal-green uppercase text-sm tracking-wide">3. Nutrition (F1 + PDM)</h3>
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            <strong>2 cuillères F1 + 2 cuillères PDM</strong><br>
+                            dans 250ml d'eau ou boisson végétale.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Informations supplémentaires préparation -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-gray-50 border border-gray-100 rounded-3xl">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-2 uppercase text-xs tracking-widest">Choisissez votre liquide :</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Eau ou Boisson de Soja / Avoine / Riz</li>
+                            <li>• Jus de fruits <span class="text-red-500 font-bold uppercase">sans sucre ajouté</span></li>
+                            <li>• Yaourt nature</li>
+                        </ul>
+                        <p class="mt-3 text-xs italic text-gray-500">
+                            "La quantité de liquide peut être modifiée selon vos préférences, selon que vous souhaitez un repas plus ou moins dense."
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl border border-gray-200">
+                        <p class="text-xs leading-relaxed text-gray-600">
+                            <strong class="text-orange-600">⚠️ ATTENTION AU LAIT DE VACHE :</strong><br>
+                            Un demi-litre de lait par jour (250cc par portion) pourrait causer des problèmes intestinaux ou de digestion chez les personnes non habituées.
+                        </p>
+                        <p class="mt-2 text-xs leading-relaxed text-gray-600">
+                            <strong class="text-blue-600">🌡️ TEMPÉRATURE :</strong><br>
+                            Les liquides peuvent être froids ou tièdes, mais <strong class="uppercase">pas chauds</strong> (les hautes températures éliminent les nutriments).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Objectifs -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                    <h3 class="text-blue-700 font-bold text-xl mb-3 flex items-center gap-2">⚖️ Perte de poids</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Remplacez <strong>2 repas par jour</strong> par un shake :<br>
+                        • Le <strong>PETIT-DÉJEUNER</strong><br>
+                        • Un <strong>REPAS PRINCIPAL</strong> (Déjeuner ou Dîner)
+                    </p>
+                </div>
+                <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+                    <h3 class="text-orange-700 font-bold text-xl mb-3 flex items-center gap-2">💪 Masse sèche</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Consommez <strong>3 shakes par jour</strong> :<br>
+                        • Le <strong>PETIT-DÉJEUNER</strong> + 2 shakes supplémentaires (1 heure après les repas principaux).
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section Snacks -->
+            <section class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-herbal-green text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                    <h2 class="text-2xl font-bold text-gray-800 uppercase tracking-wide">Snacks et après-midi</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="flex flex-col items-center">
+                        <img src="barretta.png" alt="Barre protéinée" class="w-56 h-56 object-contain mix-blend-multiply">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 mb-4 font-semibold text-sm italic">Protéines et hydratation : essentiels pour ne pas arriver affamé au dîner.</p>
+                        <h4 class="font-bold text-herbal-green mb-3 uppercase text-xs tracking-widest">Options de snacks sains :</h4>
+                        <ul class="space-y-1 text-sm text-gray-600">
+                            <li>✔️ Barre protéinée Herbalife</li>
+                            <li>✔️ Fromage sec ou Crackers complets</li>
+                            <li>✔️ Fruits frais ou secs (amandes)</li>
+                            <li>✔️ Yaourt grec ou yaourt de soja</li>
+                            <li>✔️ Graines de soja grillées</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Règles d'or -->
+            <section class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-1">💧</div>
+                    <p class="text-[10px] font-bold uppercase text-gray-400">Hydratation</p>
+                    <p class="text-xs font-semibold">2L d'eau par jour</p>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-1">🏃</div>
+                    <p class="text-[10px] font-bold uppercase text-gray-400">Activité</p>
+                    <p class="text-xs font-semibold">Sport régulier</p>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-1">🥗</div>
+                    <p class="text-[10px] font-bold uppercase text-gray-400">Qualité</p>
+                    <p class="text-xs font-semibold">Repas équilibré</p>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="text-2xl mb-1">✨</div>
+                    <p class="text-[10px] font-bold uppercase text-gray-400">Changement</p>
+                    <p class="text-xs font-semibold">Petites habitudes</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-gray-900 p-8 text-center text-white">
+            <p class="text-xl font-bold mb-2 uppercase tracking-wide italic text-white">Commencez dès aujourd'hui : vous sentirez immédiatement la différence !</p>
+            <div class="flex items-center justify-center gap-2 mb-4 text-herbal-green font-semibold no-print">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.483 8.413-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.308 1.654zm6.757-4.791c1.513.899 3.111 1.373 4.76 1.373 5.33 0 9.67-4.34 9.67-9.671 0-2.585-1.006-5.016-2.834-6.844-1.828-1.828-4.258-2.834-6.843-2.834-5.333 0-9.673 4.34-9.673 9.672 0 1.761.479 3.483 1.385 5.003l-1.026 3.744 3.831-.997zm11.233-7.14c-.08-.133-.293-.213-.613-.373s-1.893-.933-2.186-1.04c-.293-.106-.506-.16-.72.16s-.826 1.04-1.013 1.253-.373.24-.693.08-1.352-.498-2.577-1.59c-.952-.849-1.594-1.9-1.781-2.213-.187-.313-.02-.483.14-.641.144-.142.32-.373.48-.56s.213-.32.32-.533c.106-.213.053-.4-.027-.56s-.72-1.733-.986-2.373c-.26-.627-.523-.541-.72-.551-.186-.009-.4-.01-.613-.01s-.56.08-.853.4c-.293.32-1.12 1.093-1.12 2.667s1.147 3.093 1.307 3.306c.16.213 2.257 3.447 5.467 4.833.763.33 1.359.526 1.823.673.766.243 1.463.209 2.013.127.613-.092 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52z"/></svg>
+                <a href="https://wa.me/33644654881?text=Bonjour%20Simona" target="_blank" class="hover:underline text-white font-semibold">WhatsApp: +33 6 44 65 48 81</a>
+            </div>
+            <p class="text-[10px] opacity-40 uppercase tracking-widest text-white">© HLFboutique - Votre résultat est mon objectif ✨</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
